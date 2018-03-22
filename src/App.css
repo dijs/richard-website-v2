@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Oswald');
+
+html, body, #root {
+  height: 100%;
+  font-size: 12px;
+}
+
+.app {
+  background-color: white;
+  height: 100%;
+}
+
+header {
+  /*background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/halftone-yellow.png");*/
+  background-color: #fad390;
+  height: 400px;
+}
+
+.wave {
+  display: block;
+}
+
+.content {
+  background-color: white;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  padding-left: 1rem;
+}
+
+h2 {
+  font-family: 'Bree Serif', serif;
+  font-size: 2rem;
+  padding-left: 1rem;
+  letter-spacing: 1px;
+}
+
+.portfolio {
+  background-color: #6a89cc;
+  color: white;
+  padding-bottom: 3rem;
+}
+
+.projects {
+  display: flex;  
+}
+
+.project {
+  margin: 1rem;
+  flex: 1;
+  background-color: white;
+  height: 300px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  position: relative;
+}
+
+.project .title {
+  position: absolute;
+  background-color: #4a69bd;
+  /*Layout*/
+  width: 100%;
+  height: 100%;
+  display: flex;  
+  /*Horizontal*/
+  justify-content: center;
+  /*Vertical*/
+  align-items: center;  
+
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.project .summary {
+  background-color: #e55039;
+  /*Layout*/
+  width: 100%;
+  height: 100%;
+  display: flex;  
+  /*Horizontal*/
+  justify-content: center;
+  /*Vertical*/
+  align-items: center;  
+  text-align: center;
+}
+
+.project:hover .title {
+  transform: translateY(-150px) scaleY(0) scaleX(1.1);
+}
+
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+  .projects {
+    flex-direction: column;
+  }
+  header {
+    height: 100px;
+  }
+}
