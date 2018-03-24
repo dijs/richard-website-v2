@@ -1,0 +1,142 @@
+.wave {
+  display: block;
+}
+
+.content {
+  background-color: white;
+}
+
+h1 {
+  /*font-family: 'Oswald', sans-serif;*/
+  font-size: 3rem;
+  padding-left: 1rem;
+}
+
+h2 {
+  /*font-family: 'Bree Serif', serif;*/
+  font-size: 2rem;
+  padding-left: 2rem;
+  letter-spacing: 1px;
+  margin: 0;
+  /*padding-bottom: 2rem;*/
+}
+
+.with-slide-in-bg {
+  position: relative;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.portfolio h2 {
+  position: absolute;
+
+  padding-top: 1rem;
+
+  transform: translateY(-100%);
+
+  animation: 1s ease-in 1s 1 slideInFromTop;
+  animation-fill-mode: forwards;
+}
+
+.with-slide-in-bg:before {
+  content: '';
+
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  background-color: #6a89cc;
+
+  /*transform: translateX(-100%), rotateX(10deg);*/
+  transform: rotateX(10deg);
+
+  animation: 1s ease-in 1s 1 slideInFromLeft;
+  animation-fill-mode: forwards;
+}
+
+.portfolio {
+  color: white;
+}
+
+.projects {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  
+  display: flex;  
+}
+
+.project {
+  margin: 2rem;
+  flex: 1;
+  background-color: white;
+  height: 350px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  position: relative;
+}
+
+.project .title {
+  position: absolute;
+  background-color: #4a69bd;
+  /*Layout*/
+  width: 100%;
+  height: 100%;
+  display: flex;  
+  /*Horizontal*/
+  justify-content: center;
+  /*Vertical*/
+  align-items: center;  
+
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.project .summary {
+  background-color: #e55039;
+  /*Layout*/
+  width: 100%;
+  height: 100%;
+  display: flex;  
+  /*Horizontal*/
+  justify-content: center;
+  /*Vertical*/
+  align-items: center;  
+  text-align: center;
+
+  font-size: 2rem;
+}
+
+.project:hover .title {
+  transform: translateY(-175px) scaleY(0) scaleX(1.1);
+}
+
+.work-map {
+  width: 100%;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+  .projects {
+    flex-direction: column;
+  }
+  header {
+    height: 100px;
+  }
+}
