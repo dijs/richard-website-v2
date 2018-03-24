@@ -67,8 +67,8 @@ html, body, #root {
 }
 
 .project {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   color: white;
   font-size: 1.5rem;
   background-color: #e15f41;
@@ -78,6 +78,7 @@ html, body, #root {
   align-items: center;
 
   margin-right: 1rem;
+  margin-bottom: 1rem;
 
   /*Start out of viewport*/
   transform: translateY(-100vh);
@@ -85,10 +86,19 @@ html, body, #root {
   animation-fill-mode: forwards;
 }
 .project:nth-of-type(2) {
-  animation-delay: 0.5s;
+  animation-delay: 0.25s;
 }
 .project:nth-of-type(3) {
+  animation-delay: 0.5s;
+}
+.project:nth-of-type(4) {
+  animation-delay: 0.75s;
+}
+.project:nth-of-type(5) {
   animation-delay: 1s;
+}
+.project:nth-of-type(6) {
+  animation-delay: 1.25s;
 }
 
 .project .summary {
@@ -97,4 +107,19 @@ html, body, #root {
 
 .projects {
   display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  padding-bottom: 1rem;
+}
+
+.work-map {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }

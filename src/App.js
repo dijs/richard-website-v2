@@ -1,28 +1,13 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
-// import Wave from './Wave';
+import WorkMap from './WorkMap';
 import { projects, bio } from './info';
-// import worldMap from './images/world.svg';
 import './App.css';
-
-// function Portfolio() {
-//   return <div>
-//     <h2>Portfolio</h2>
-//     <div className="projects">
-//     </div>
-//   </div>;
-// }
-
-// function WorkMap() {
-//   return <object className="work-map" type="image/svg+xml" data={worldMap}>
-//     Work Map
-//   </object>;
-// }
 
 function HeadTriangle() {
   return (
     <svg className="head-triangle" width="100%" height="150px" viewBox="0 0 100 100" preserveAspectRatio="none"> 
-      <path d="M0,0 L 100,0 100,10, 0,100 Z" vector-effect="non-scaling-stroke"/> 
+      <path d="M0,0 L 100,0 100,10, 0,100 Z" vectorEffect="non-scaling-stroke"/> 
     </svg>
   );
 }
@@ -30,7 +15,7 @@ function HeadTriangle() {
 function BottomTriangle() {
   return (
     <svg className="bottom-triangle" width="100%" height="150px" viewBox="0 0 100 100" preserveAspectRatio="none"> 
-      <path d="M0,0 L 100,0 100,50 Z" vector-effect="non-scaling-stroke"/> 
+      <path d="M0,0 L 100,0 100,50 Z" vectorEffect="non-scaling-stroke"/> 
     </svg>
   );
 }
@@ -47,19 +32,23 @@ function Bio() {
 
 const Avatar = () => <img className="avatar" src="https://placehold.it/300" />;
 
+function Portfolio() {
+  return <div className="portfolio padding">
+    <h1>THE PORTFOLIO</h1>
+    <div className="projects">
+      {projects.map(({ title, summary }) => {
+        return (
+          <div key={title} className="project">
+            <div className="">{title}</div>
+            <div className="summary">{summary}</div>
+          </div>
+        );
+      })}            
+    </div>
+  </div>;
+}
+
 class App extends Component {
-  // <header />
-  // <Wave color="white" bgColor="#fad390" />
-  // <Wave color="#6a89cc" bgColor="white" />
-  
-  // <div className="content">
-  //   <h1>Richard van der Dys</h1>
-  //   <div className="with-slide-in-bg portfolio">
-  //     <Portfolio />
-  //   </div>
-  // </div>
-  // <WorkMap />
-  
   render() {
     return (
       <div className="app">
@@ -78,20 +67,9 @@ class App extends Component {
             <Avatar />
           </div>
         </div>
-        <div className="portfolio padding">
-          <h1>THE PORTFOLIO</h1>
-          <div className="projects">
-            {projects.map(({ title, summary }) => {
-              return (
-                <div key={title} className="project">
-                  <div className="">{title}</div>
-                  <div className="summary">{summary}</div>
-                </div>
-              );
-            })}            
-          </div>
-        </div>
+        <Portfolio />
         <BottomTriangle />
+        <WorkMap />
       </div>
     );
   }
