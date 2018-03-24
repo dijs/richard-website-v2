@@ -4,6 +4,7 @@ html, body, #root {
   width: 100%;
   height: 100%;
   font-size: 16px;
+  color: #303952;
 }
 
 .app {
@@ -80,7 +81,7 @@ html, body, #root {
   margin-bottom: 1rem;
 
   /*Start out of viewport*/
-  transform: translateY(-130vh);
+  transform: translateY(-200vh);
 }
 
 .project.active {
@@ -123,7 +124,7 @@ h1 {
 
 .contact h1 {
   text-align: center;
-  color: black;
+  color: #303952;
 }
 
 .work-map {
@@ -153,7 +154,7 @@ h1 {
   font-size: 3rem;
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: #303952;
 }
 
 .links a:hover {
