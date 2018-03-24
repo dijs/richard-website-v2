@@ -114,6 +114,11 @@ h1 {
   padding-bottom: 1rem;
 }
 
+.contact h1 {
+  text-align: center;
+  color: black;
+}
+
 .work-map {
   width: 100%;
   opacity: 0.8;
@@ -122,4 +127,29 @@ h1 {
 .row {
   margin-left: 0;
   margin-right: 0;
+}
+
+.footer {
+  background-color: #596275;
+  color: white;
+  padding: 3rem;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+}
+
+.links a {
+  flex: 1;
+  text-align: center;
+  font-size: 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.links a:hover {
+  color: #546de5;
+  transition: all 0.5s;
 }

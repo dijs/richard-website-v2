@@ -30,6 +30,26 @@ function Bio() {
   </div>;
 }
 
+function Footer() {
+  return <div className="footer">
+    <div>Created by Dijs Inc.</div>
+    <br />
+    <div>&copy; {new Date().getFullYear()}</div>
+  </div>;
+}
+
+function Contact() {
+  return <div className="contact">
+    <h1>Contact Me</h1>
+    <div className="links">
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/dijs" className="fab fa-github" />
+      <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/richard-van-der-dys-iii-91880a24/" className="fab fa-linkedin" />
+      <a target="_blank" rel="noopener noreferrer" href="https://www.npmjs.com/~dijs" className="fab fa-npm" />
+      <a target="_blank" rel="noopener noreferrer" href="mailto:richard.vanderdys@gmail.com" className="far fa-envelope" />
+    </div>
+  </div>;
+}
+
 const Avatar = () => <img className="avatar" src="https://placehold.it/300" />;
 
 function Portfolio() {
@@ -69,7 +89,9 @@ class App extends Component {
         </div>
         <Portfolio />
         <BottomTriangle />
+        <Contact />
         <WorkMap />
+        <Footer />
       </div>
     );
   }
