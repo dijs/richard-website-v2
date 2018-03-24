@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 import WorkMap from './WorkMap';
-import { projects, bio } from './info';
+import Portfolio from './Portfolio';
+import { bio } from './info';
 import './App.css';
 
 function HeadTriangle() {
@@ -51,22 +52,6 @@ function Contact() {
 }
 
 const Avatar = () => <img className="avatar" src="https://placehold.it/300" />;
-
-function Portfolio() {
-  return <div className="portfolio padding">
-    <h1>THE PORTFOLIO</h1>
-    <div className="projects">
-      {projects.map(({ title, summary }) => {
-        return (
-          <div key={title} className="project">
-            <div className="">{title}</div>
-            <div className="summary">{summary}</div>
-          </div>
-        );
-      })}            
-    </div>
-  </div>;
-}
 
 class App extends Component {
   render() {

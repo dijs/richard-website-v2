@@ -8,7 +8,6 @@ html, body, #root {
 
 .app {
   background-color: #778beb;
-  /*background-color: white;*/
   width: 100%;
   height: 100%;
 }
@@ -81,10 +80,14 @@ html, body, #root {
   margin-bottom: 1rem;
 
   /*Start out of viewport*/
-  transform: translateY(-100vh);
-  animation: 0.7s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 fall;
-  animation-fill-mode: forwards;
+  transform: translateY(-130vh);
 }
+
+.project.active {
+  animation: 0.7s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 fall;
+  animation-fill-mode: forwards;  
+}
+
 .project:nth-of-type(2) {
   animation-delay: 0.25s;
 }
@@ -112,6 +115,10 @@ html, body, #root {
 
 h1 {
   padding-bottom: 1rem;
+}
+
+.contact {
+  margin-bottom: 5rem;
 }
 
 .contact h1 {
