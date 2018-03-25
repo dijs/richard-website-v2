@@ -3,6 +3,7 @@ import { hot } from 'react-hot-loader';
 import WorkMap from './WorkMap';
 import Portfolio from './Portfolio';
 import { bio } from './info';
+import avatar from './images/profile-low.jpg';
 import './App.css';
 
 function HeadTriangle() {
@@ -51,7 +52,7 @@ function Contact() {
   </div>;
 }
 
-const Avatar = () => <img className="avatar" src="https://placehold.it/300" />;
+const Avatar = () => <img className="avatar" src={avatar} />;
 
 class App extends Component {
   render() {
@@ -65,10 +66,10 @@ class App extends Component {
           </div>
         </header>
         <div className="row">
-          <div className="padding col-lg-5">
+          <div className="padding col-lg-7">
             <Bio />
           </div>
-          <div className="padding col-lg-offset-3 col-lg-4 center">
+          <div className="padding col-lg-offset-1 col-lg-4 center">
             <Avatar />
           </div>
         </div>

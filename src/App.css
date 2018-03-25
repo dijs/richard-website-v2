@@ -46,6 +46,7 @@ html, body, #root {
 .avatar {
   margin-top: 7rem;
   border-radius: 100%;
+  width: 300px;
 }
 
 .portfolio {
@@ -73,6 +74,8 @@ html, body, #root {
   font-size: 1.5rem;
   background-color: #e15f41;
 
+  background-size: cover !important;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,6 +85,15 @@ html, body, #root {
 
   /*Start out of viewport*/
   transform: translateY(-200vh);
+}
+
+a.project {
+  text-decoration: none;
+}
+
+.project .name {
+  font-size: 3rem;
+  color: black;
 }
 
 .project.active {
@@ -105,8 +117,28 @@ html, body, #root {
   animation-delay: 1.25s;
 }
 
+.project img {
+  max-width: 90%;
+}
+
 .project .summary {
-  display: none;
+  font-size: 1rem;
+  position: absolute;
+  background-color: #f7d794;
+  color: black;
+  height: calc(100% - 1rem);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  width: calc(100% - 1rem);
+  transform: rotateX(90deg);
+  transition-duration: 0.5s;
+}
+
+.project:hover .summary {
+  transform: rotateX(0deg);
+  transition-duration: 0.5s;
 }
 
 .projects {
