@@ -60,12 +60,12 @@ class App extends Component {
       <div className="app">
         <HeadTriangle />
         <header className="row">
-          <div className="col-lg-offset-8 col-lg-4 center">
+          <div className="col-xs-12 col-lg-offset-8 col-lg-4 center">
             <Name />
             <Title />
           </div>
         </header>
-        <div className="row">
+        <div className="mid row">
           <div className="padding col-lg-7">
             <Bio />
           </div>

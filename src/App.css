@@ -13,6 +13,10 @@ html, body, #root {
   height: 100%;
 }
 
+.mid {
+  background-color: #778beb;
+}
+
 .head-triangle path {
   fill: #546de5;
 }
@@ -84,7 +88,7 @@ html, body, #root {
   margin-bottom: 1rem;
 
   /*Start out of viewport*/
-  transform: translateY(-200vh);
+  transform: translateY(-300vh);
 }
 
 a.project {
@@ -192,4 +196,29 @@ h1 {
 .links a:hover {
   color: #546de5;
   transition: all 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  html, body, #root {
+    font-size: 14px;
+  }
+  .head-triangle {
+    height: 50px;
+  }
+  .project {
+    /*Figure this out later. Use a different animation.*/
+    /*display: none;*/
+    background-color: none;
+    display: block;
+    min-height: 100px;
+  }
+  .project img {
+    display: block;
+
+  }
+  .project .summary {
+    position: static;
+    transform: none;
+    background-color: none;
+  }
 }
