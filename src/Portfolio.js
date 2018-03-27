@@ -4,7 +4,7 @@ import { projects } from './info';
 
 const yPositionTrigger = window.innerHeight / 3;
 
-function Project({title, image, summary, background, href, active}) {
+function Project({title, image, className, summary, background, href, active}) {
   return (
     <a
       href={href}
@@ -12,7 +12,7 @@ function Project({title, image, summary, background, href, active}) {
       className={`project ${active && 'active'}`}
     >
       { image && <img src={image} /> }
-      { title && <div className="name">{title}</div> }
+      { title && <div className={`name ${className}`}>{title}</div> }
       <div className="summary">{summary}</div>
     </a>
   );

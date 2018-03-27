@@ -3,7 +3,7 @@ import { hot } from 'react-hot-loader';
 import { countriesWorkedIn } from './info';
 import worldMap from './images/world.svg';
 
-const workedCountryColor = '#ea8685';
+const workedCountryColor = '#5a6d19';
 
 class WorkMap extends Component {
   loaded() {

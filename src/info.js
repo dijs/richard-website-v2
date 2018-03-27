@@ -31,6 +31,7 @@
 	{
 		href: 'http://battle-bots.herokuapp.com/',
 		title: 'Battle Bots',
+		className: 'battle-bots',
 		background: 'url(http://battle-bots.herokuapp.com/images/background.jpg)',
 		summary: 'Game to help kids learn to code by building robots that fight.'
 	}

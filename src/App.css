@@ -1,42 +1,60 @@
-/*@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Oswald');*/
+@import url('https://fonts.googleapis.com/css?family=Bangers|Indie+Flower|Raleway');
+
+/*
+#5a6d19
+#2f4289
+#c29832
+#c63526
+#ffffff
+
+*/
+
 
 html, body, #root {
   width: 100%;
   height: 100%;
   font-size: 16px;
-  color: #303952;
+  color: #ffffff;
 }
 
 .app {
-  background-color: #778beb;
+  background-color: #c29832;
   width: 100%;
   height: 100%;
 }
 
 .mid {
-  background-color: #778beb;
+  background-color: #c29832;
 }
 
 .head-triangle path {
-  fill: #546de5;
+  fill: #5a6d19;
+}
+
+.title, .bio p {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+}
+
+.name, h1 {
+  font-family: 'Bangers', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+  margin-top: -1rem;
 }
 
 .name {
-  font-size: 2rem;
   color: white;
 }
 
 .title {
-  font-size: 1.2rem;
   color: white;
 }
 
 .title:before, .title:after {
   content: '―';
-}
-
-.bio p {
-  font-size: 1.5rem;
 }
 
 .padding {
@@ -54,12 +72,12 @@ html, body, #root {
 }
 
 .portfolio {
-  background-color: #e77f67;
+  background-color: #5a6d19;
   color: white;
 }
 
 .bottom-triangle {
-  fill: #e77f67;
+  fill: #5a6d19;
 }
 
 @keyframes fall {
@@ -126,9 +144,11 @@ a.project {
 }
 
 .project .summary {
+  font-family: 'Bangers', sans-serif;
+  letter-spacing: 1px;
   font-size: 1rem;
   position: absolute;
-  background-color: #f7d794;
+  background-color: #fff;
   color: black;
   height: calc(100% - 1rem);
   display: flex;
@@ -155,17 +175,19 @@ h1 {
 }
 
 .contact {
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  background-color: #c29832;
 }
 
 .contact h1 {
+  margin: 0;
   text-align: center;
-  color: #303952;
 }
 
 .work-map {
   width: 100%;
-  opacity: 0.8;
+  background-color: #c29832;
+  display: block;
 }
 
 .row {
@@ -174,7 +196,7 @@ h1 {
 }
 
 .footer {
-  background-color: #596275;
+  background-color: #5a6d19;
   color: white;
   padding: 3rem;
   text-align: center;
@@ -190,11 +212,11 @@ h1 {
   font-size: 3rem;
   cursor: pointer;
   text-decoration: none;
-  color: #303952;
+  color: #ffffff;
 }
 
 .links a:hover {
-  color: #546de5;
+  color: #5a6d19;
   transition: all 0.5s;
 }
 
@@ -204,6 +226,9 @@ h1 {
   }
   .head-triangle {
     height: 50px;
+  }
+  .h1, .name {
+    margin-top: 0;
   }
   .project {
     /*Figure this out later. Use a different animation.*/
@@ -221,4 +246,8 @@ h1 {
     transform: none;
     background-color: none;
   }
+}
+
+.battle-bots {
+  font-family: 'Indie Flower', cursive;
 }
