@@ -24,7 +24,7 @@
 	},
 	{
 		href: 'https://github.com/dijs/wiki',
-		image: 'https://github.com/dijs/wiki/raw/master/wikijs.png',
+		image: 'https://github.com/dijs/wiki/raw/master/img/wikijs.png',
 		background: 'white',
 		summary: 'WikiJs is a node.js library which serves as an interface to Wikipedia (or any MediaWiki).'
 	},
