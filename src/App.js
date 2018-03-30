@@ -66,10 +66,10 @@ class App extends Component {
           </div>
         </header>
         <div className="mid row">
-          <div className="padding col-lg-7">
+          <div className="padding col-lg-7 col-xs-12">
             <Bio />
           </div>
-          <div className="padding col-lg-offset-1 col-lg-4 center">
+          <div className="padding col-lg-offset-1 col-lg-4 col-xs-12 center">
             <Avatar />
           </div>
         </div>
