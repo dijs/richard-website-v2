@@ -4,7 +4,7 @@ import WorkMap from './WorkMap';
 import Portfolio from './Portfolio';
 import { bio } from './info';
 import avatar from './images/profile-low.jpg';
-import './App.css';
+import './App.scss';
 
 function HeadTriangle() {
   return (
